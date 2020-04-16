@@ -33,6 +33,7 @@
     "packages/api/importAll.macro.js"
   ],
   "scripts": {
+    "prepare": "yarn run build",
     "build": "yarn cross-env NODE_ENV=production lerna run build",
     "build:watch": "lerna run build:watch --parallel",
     "test": "lerna run test --stream -- --colors",
